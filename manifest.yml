@@ -1,0 +1,11 @@
+applications:
+  - name: lounge
+    buildpack: nodejs_buildpack
+    command: lounge start --port $PORT 
+    memory: 64M 
+    disk_quota: 128M 
+    stack: cflinuxfs2
+    env:
+      NODE_ENV: production
+    
+
