@@ -3,7 +3,7 @@ applications:
     buildpack: nodejs_buildpack
     command: lounge start --port $PORT 
     memory: 64M 
-    disk_quota: 128M 
+    disk_quota: 64M 
     stack: cflinuxfs2
     env:
       NODE_ENV: production
